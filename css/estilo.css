@@ -1,0 +1,119 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+}
+.container-fluid .row .col-md-12{
+    background-image: url('../imagenes/bannersuperior.jpg');
+}
+
+.encabezado-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/bannersuperior.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+.encabezado-img .p{
+    font-size: 20px;
+}
+.encabezado-img .h1{
+    font-size: 50px;
+    padding: 10px 0;
+    
+}
+
+.card-group .card {
+   padding: 10px;
+   border: 0px;
+}
+.card-img-top{
+    border-radius: 35px 0px 35px 0px !important;
+    
+}
+
+.card-title{
+    text-align: center;
+ }
+ 
+ .container-fluid{
+    padding: 5px 15px;
+ }
+
+ .separador{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/bannersuperior.jpg");
+
+}
+@media screen and (max-width:800px) {
+    #piePagina{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: #212529;
+    min-height: 100px;;
+}
+footer img{
+    text-align:center;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+@media screen and (max-width:1000px) {
+    .encabezado-img .row{
+        flex-direction: column !important;
+        font-size: 16px;
+    }
+    .encabezado-img{
+        height: 540px;
+    }
+}
+
+/*=========================SERVICIOS================================*/
+
+@media screen and (max-width:1090px) {
+    .card-group{
+        flex-direction: column !important;
+    }
+    
+}
+
+/*=========================NOSOTROS================================*/
+
+#cabecera-nosotros {
+    max-height:39rem !important;
+}
+
+
+@media (max-width: 880px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+        margin-right: 0rem !important;
+        margin-left: 0rem !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
